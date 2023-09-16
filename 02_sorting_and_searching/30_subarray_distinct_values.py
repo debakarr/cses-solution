@@ -12,13 +12,16 @@ Memory limit: 512 MB
 Given an array of $n$ integers, your task is to calculate the number of subarrays that have at most $k$ distinct values.
 
 Input
-
+
+
 The first input line has two integers $n$ and $k$.
-
+
+
 The next line has $n$ integers $x\_1,x\_2,\dots,x\_n$: the contents of the array.
 
 Output
-
+
+
 Print one integer: the number of subarrays.
 
 Constraints
@@ -27,11 +30,14 @@ Constraints
  $1 \le x\_i \le 10^9$
 
 Example
-
+
+
 Input:
-5 2
+5 2
+
 1 2 3 1 1
-
+
+
 Output:
 10 
 """

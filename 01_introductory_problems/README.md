@@ -5,7 +5,7 @@
 | Repetitions           | [Link](https://cses.fi/problemset/task/1069) | [Solution](./03_repetitions.py)           | True     |
 | Increasing Array      | [Link](https://cses.fi/problemset/task/1094) | [Solution](./04_increasing_array.py)      | True     |
 | Permutations          | [Link](https://cses.fi/problemset/task/1070) | [Solution](./05_permutations.py)          | True     |
-| Number Spiral         | [Link](https://cses.fi/problemset/task/1071) | [Solution](./06_number_spiral.py)         | False    |
+| Number Spiral         | [Link](https://cses.fi/problemset/task/1071) | [Solution](./06_number_spiral.py)         | True     |
 | Two Knights           | [Link](https://cses.fi/problemset/task/1072) | [Solution](./07_two_knights.py)           | False    |
 | Two Sets              | [Link](https://cses.fi/problemset/task/1092) | [Solution](./08_two_sets.py)              | False    |
 | Bit Strings           | [Link](https://cses.fi/problemset/task/1617) | [Solution](./09_bit_strings.py)           | False    |

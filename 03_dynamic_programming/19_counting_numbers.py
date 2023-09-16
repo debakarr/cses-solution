@@ -12,11 +12,13 @@ Memory limit: 512 MB
 Your task is to count the number of integers between $a$ and $b$ where no two adjacent digits are the same.
 
 Input
-
+
+
 The only input line has two integers $a$ and $b$.
 
 Output
-
+
+
 Print one integer: the answer to the problem.
 
 Constraints
@@ -24,10 +26,12 @@ Constraints
 $0 \le a \le b \le 10^{18}$
 
 Example
-
+
+
 Input:
 123 321
-
+
+
 Output:
 171 
 """

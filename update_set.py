@@ -6,12 +6,15 @@ from bs4 import BeautifulSoup
 from markdownify import markdownify as md
 from tabulate import tabulate
 
+
 class Problem(NamedTuple):
     name: str
     url: str
 
+
 def normalize(string: str):
     return "_".join(string.lower().replace("-", "_").split())
+
 
 if __name__ == "__main__":
     # Fetch the problem list page
@@ -36,12 +39,19 @@ if __name__ == "__main__":
     for topic_index, (problem_type, problem_list) in enumerate(
         zip(problem_types[1:], problems[2:]), start=1
     ):
-        topic_level_readme_table = {"Problem": [], "Link": [], "Solution": [], "Solved": []}
+        topic_level_readme_table = {
+            "Problem": [],
+            "Link": [],
+            "Solution": [],
+            "Solved": [],
+        }
         problem_type_folder = f"{topic_index:02d}_{normalize(problem_type)}"
         topic_folder_path = root_path / problem_type_folder
 
         for index, problem in enumerate(problem_list, start=1):
-            solution_path = topic_folder_path / f"{index:02d}_{normalize(problem.name)}.py"
+            solution_path = (
+                topic_folder_path / f"{index:02d}_{normalize(problem.name)}.py"
+            )
             solution_path.parent.mkdir(exist_ok=True, parents=True)
             problem_url = f"https://cses.fi{problem.url}"
 
@@ -58,8 +68,12 @@ if __name__ == "__main__":
             # Populate the topic-level readme table
             topic_level_readme_table["Problem"].append(problem.name)
             topic_level_readme_table["Link"].append(f"[Link]({problem_url})")
-            topic_level_readme_table["Solution"].append(f"[Solution](./{solution_path.name})")
-            topic_level_readme_table["Solved"].append("__main__" in solution_path.read_text())
+            topic_level_readme_table["Solution"].append(
+                f"[Solution](./{solution_path.name})"
+            )
+            topic_level_readme_table["Solved"].append(
+                "__main__" in solution_path.read_text()
+            )
 
         # Populate the top-level readme table
         top_level_readme_table["Topic"].append(problem_type)
@@ -68,7 +82,9 @@ if __name__ == "__main__":
         # Generate and write the topic-level readme
         readme_path = topic_folder_path / "README.md"
         readme_path.touch()
-        readme_path.write_text(tabulate(topic_level_readme_table, headers="keys", tablefmt="github"))
+        readme_path.write_text(
+            tabulate(topic_level_readme_table, headers="keys", tablefmt="github")
+        )
 
     # Generate and write the top-level readme
     readme_path = root_path / "README.md"
