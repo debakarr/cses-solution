@@ -1,3 +1,15 @@
+## How I update this repo?
+
+Most of the things are automated like:
+
+- creating problem solution script.
+- generating readme.
+- marking a problem as solved.
+
+I generally will solve the problem and then run `python update_set.py` and it should take care of updating all the readme. Even add problems if any new problem is added.
+
+---
+
 | Topic                 | Solution                           |
 |-----------------------|------------------------------------|
 | Introductory Problems | [Link](./01_introductory_problems) |
@@ -11,3 +23,4 @@
 | Geometry              | [Link](./09_geometry)              |
 | Advanced Techniques   | [Link](./10_advanced_techniques)   |
 | Additional Problems   | [Link](./11_additional_problems)   |
+

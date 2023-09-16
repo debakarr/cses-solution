@@ -81,4 +81,19 @@ if __name__ == "__main__":
     
     readme_path = root_path / "README.md"
     readme_path.touch()
-    readme_path.write_text(tabulate(top_level_readme_table, headers="keys", tablefmt="github"))
+    readme_content = f"""## How I update this repo?
+
+Most of the things are automated like:
+
+- creating problem solution script.
+- generating readme.
+- marking a problem as solved.
+
+I generally will solve the problem and then run `python update_set.py` and it should take care of updating all the readme. Even add problems if any new problem is added.
+
+---
+
+{tabulate(top_level_readme_table, headers="keys", tablefmt="github")}
+
+"""
+    readme_path.write_text(readme_content)
