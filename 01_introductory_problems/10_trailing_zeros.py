@@ -38,3 +38,17 @@ Input:
 Output:
 4 
 """
+
+if __name__ == "__main__":
+    number = int(input())
+
+    count = 0
+    power_of_5 = 5
+
+    while power_of_5 <= number:
+        count += number // power_of_5
+        power_of_5 *= 5
+
+    for power_of_5 in range(5, number + 1, )
+
+    print(count)

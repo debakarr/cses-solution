@@ -38,3 +38,7 @@ Input:
 Output:
 8 
 """
+
+if __name__ == "__main__":
+    number = int(input())
+    print((2**number) % ((10**9) + 7))

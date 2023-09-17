@@ -62,14 +62,18 @@ if __name__ == "__main__":
 
     total = sum(range(1, number + 1))
 
+    # if the sum of the numbers is not even, then it can't be divided into set of two
     if total % 2 != 0:
         print("NO")
     else:
         print("YES")
 
-        expected_sum = int(total / 2)
+        # sum of set will be equal to half of total sum
+        expected_sum = total // 2
         set1, set2 = set(), set()
 
+        # start from the biggest number,
+        # keep subtracting it from expected_sum until we get the a set where the sum is equal to expected sum
         for num in range(number, 0, -1):
             if expected_sum - num >= 0:
                 set1.add(num)
