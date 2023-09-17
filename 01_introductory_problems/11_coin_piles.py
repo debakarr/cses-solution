@@ -52,3 +52,42 @@ NO
 
 YES 
 """
+
+if __name__ == "__main__":
+    number_of_test = int(input())
+
+    for _ in range(number_of_test):
+        first, second = map(int, input().split())
+
+        # while first > 0 and second > 0:
+        #     if first >= second:
+        #         first -= 2
+        #         second -= 1
+        #     else:
+        #         first -= 1
+        #         second -= 2
+
+        # if first == 0 and second == 0:
+        #     print("YES")
+        # else:
+        #     print("NO")
+
+        # check that the max is less than twice of min
+        # if the piles with max number have more than twice the number of coins in the other pile,
+        # then even if we remove 2 times the number from the greater pile, the coins in the lesser pile will exhaust
+        if max(first, second) > 2 * min(first, second):
+            print("NO")
+            continue
+
+        # say we remove 2 coins from first and 1 coin from second pile x number of time
+        # and we remove 1 coin from first and 2 coins from second pile y number of time
+        # for pile to empty, we should have:
+        # first - 2x - y = 0
+        # second - x - 2y = 0
+        # first + second - 2x - y - x - 2y = 0
+        # first + second = 3x + 3y i.e 3(x + y)
+        # So it should be divisible by 3
+        if (first + second) % 3 != 0:
+            print("NO")
+        else:
+            print("YES")

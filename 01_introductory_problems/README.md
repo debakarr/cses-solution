@@ -10,7 +10,7 @@
 | Two Sets              | [Link](https://cses.fi/problemset/task/1092) | [Solution](./08_two_sets.py)              | True     |
 | Bit Strings           | [Link](https://cses.fi/problemset/task/1617) | [Solution](./09_bit_strings.py)           | True     |
 | Trailing Zeros        | [Link](https://cses.fi/problemset/task/1618) | [Solution](./10_trailing_zeros.py)        | True     |
-| Coin Piles            | [Link](https://cses.fi/problemset/task/1754) | [Solution](./11_coin_piles.py)            | False    |
+| Coin Piles            | [Link](https://cses.fi/problemset/task/1754) | [Solution](./11_coin_piles.py)            | True     |
 | Palindrome Reorder    | [Link](https://cses.fi/problemset/task/1755) | [Solution](./12_palindrome_reorder.py)    | False    |
 | Gray Code             | [Link](https://cses.fi/problemset/task/2205) | [Solution](./13_gray_code.py)             | False    |
 | Tower of Hanoi        | [Link](https://cses.fi/problemset/task/2165) | [Solution](./14_tower_of_hanoi.py)        | False    |
