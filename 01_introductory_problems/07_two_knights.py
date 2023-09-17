@@ -49,3 +49,30 @@ Output:
 
 1848 
 """
+
+
+def helper(num: int) -> int:
+    k1 = num * num  # number of ways to place the first knight
+    k2 = num * num - 1  # number of ways to place the second knight
+    together = int(
+        (k1 * k2) / 2
+    )  # number of ways to place both knights together without duplication
+
+    attack_area = (num - 1) * (
+        num - 2
+    )  # number of 2x3 attack area inside a num * num area
+    ways_to_attack = (
+        attack_area * 4
+    )  # number of ways knight can attack each other inside a 2 * 3 area
+
+    place_without_attack = (
+        together - ways_to_attack
+    )  # number of ways knight can be place so that they don't attack each other
+    return place_without_attack
+
+
+if __name__ == "__main__":
+    k = int(input())
+
+    for num in range(1, k + 1):
+        print(helper(num))

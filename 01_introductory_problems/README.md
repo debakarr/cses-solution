@@ -6,8 +6,8 @@
 | Increasing Array      | [Link](https://cses.fi/problemset/task/1094) | [Solution](./04_increasing_array.py)      | True     |
 | Permutations          | [Link](https://cses.fi/problemset/task/1070) | [Solution](./05_permutations.py)          | True     |
 | Number Spiral         | [Link](https://cses.fi/problemset/task/1071) | [Solution](./06_number_spiral.py)         | True     |
-| Two Knights           | [Link](https://cses.fi/problemset/task/1072) | [Solution](./07_two_knights.py)           | False    |
-| Two Sets              | [Link](https://cses.fi/problemset/task/1092) | [Solution](./08_two_sets.py)              | False    |
+| Two Knights           | [Link](https://cses.fi/problemset/task/1072) | [Solution](./07_two_knights.py)           | True     |
+| Two Sets              | [Link](https://cses.fi/problemset/task/1092) | [Solution](./08_two_sets.py)              | True     |
 | Bit Strings           | [Link](https://cses.fi/problemset/task/1617) | [Solution](./09_bit_strings.py)           | False    |
 | Trailing Zeros        | [Link](https://cses.fi/problemset/task/1618) | [Solution](./10_trailing_zeros.py)        | False    |
 | Coin Piles            | [Link](https://cses.fi/problemset/task/1754) | [Solution](./11_coin_piles.py)            | False    |

@@ -56,3 +56,28 @@ Input:
 Output:
 NO 
 """
+
+if __name__ == "__main__":
+    number = int(input())
+
+    total = sum(range(1, number + 1))
+
+    if total % 2 != 0:
+        print("NO")
+    else:
+        print("YES")
+
+        expected_sum = int(total / 2)
+        set1, set2 = set(), set()
+
+        for num in range(number, 0, -1):
+            if expected_sum - num >= 0:
+                set1.add(num)
+                expected_sum -= num
+            else:
+                set2.add(num)
+
+        print(len(set1))
+        print(" ".join(map(str, set1)))
+        print(len(set2))
+        print(" ".join(map(str, set2)))
