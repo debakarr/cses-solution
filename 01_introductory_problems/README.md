@@ -11,8 +11,8 @@
 | Bit Strings           | [Link](https://cses.fi/problemset/task/1617) | [Solution](./09_bit_strings.py)           | True     |
 | Trailing Zeros        | [Link](https://cses.fi/problemset/task/1618) | [Solution](./10_trailing_zeros.py)        | True     |
 | Coin Piles            | [Link](https://cses.fi/problemset/task/1754) | [Solution](./11_coin_piles.py)            | True     |
-| Palindrome Reorder    | [Link](https://cses.fi/problemset/task/1755) | [Solution](./12_palindrome_reorder.py)    | False    |
-| Gray Code             | [Link](https://cses.fi/problemset/task/2205) | [Solution](./13_gray_code.py)             | False    |
+| Palindrome Reorder    | [Link](https://cses.fi/problemset/task/1755) | [Solution](./12_palindrome_reorder.py)    | True     |
+| Gray Code             | [Link](https://cses.fi/problemset/task/2205) | [Solution](./13_gray_code.py)             | True     |
 | Tower of Hanoi        | [Link](https://cses.fi/problemset/task/2165) | [Solution](./14_tower_of_hanoi.py)        | False    |
 | Creating Strings      | [Link](https://cses.fi/problemset/task/1622) | [Solution](./15_creating_strings.py)      | False    |
 | Apple Division        | [Link](https://cses.fi/problemset/task/1623) | [Solution](./16_apple_division.py)        | False    |

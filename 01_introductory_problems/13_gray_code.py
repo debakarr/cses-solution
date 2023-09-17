@@ -44,3 +44,17 @@ Output:
 
 10 
 """
+
+if __name__ == "__main__":
+    number = int(input())
+
+    result = ["0", "1"]
+
+    for _ in range(number - 1):
+        first = result[:]
+        second = reversed(result)
+
+        result = ["0" + char for char in first] + ["1" + char for char in second]
+
+    for item in result:
+        print(item)
